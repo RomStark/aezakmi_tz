@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		007F5D7C2D2180CB000803FF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 007F5D7B2D2180CB000803FF /* Lottie */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		007F5D1C2D2166B1000803FF /* aezakmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aezakmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		007F5D802D218191000803FF /* Exceptions for "aezakmi" folder in "aezakmi" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 007F5D1B2D2166B1000803FF /* aezakmi */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		007F5D1E2D2166B1000803FF /* aezakmi */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				007F5D802D218191000803FF /* Exceptions for "aezakmi" folder in "aezakmi" target */,
+			);
 			path = aezakmi;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007F5D7C2D2180CB000803FF /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = aezakmi;
 			packageProductDependencies = (
+				007F5D7B2D2180CB000803FF /* Lottie */,
 			);
 			productName = aezakmi;
 			productReference = 007F5D1C2D2166B1000803FF /* aezakmi.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = 007F5D132D2166B1000803FF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				007F5D7A2D2180CB000803FF /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 007F5D1D2D2166B1000803FF /* Products */;
 			projectDirPath = "";
@@ -255,11 +277,13 @@
 				DEVELOPMENT_TEAM = X58ZVA4AH8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aezakmi/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "\"Разрешите доступ к Bluetooth\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +308,13 @@
 				DEVELOPMENT_TEAM = X58ZVA4AH8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = aezakmi/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "\"Разрешите доступ к Bluetooth\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		007F5D7A2D2180CB000803FF /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		007F5D7B2D2180CB000803FF /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 007F5D7A2D2180CB000803FF /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 007F5D142D2166B1000803FF /* Project object */;
 }
